@@ -1,0 +1,29 @@
+{
+  "name": "Chrome Stats",
+  "description": "Your Chrome Stats",
+  "content_security_policy": {
+    "sandbox": "sandbox allow-scripts; script-src 'self' https://cdn.tailwindcss.com"
+  },
+  "version": "1.0",
+  "manifest_version": 3,
+  "minimum_chrome_version": "93",
+  "background": {
+    "service_worker": "./src/scripts/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "./src/popup/popup.html",
+    "default_icon": "./img/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["./src/scripts/index.js", "./src/popup/popup.js"]
+    }
+  ]
+}

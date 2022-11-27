@@ -1,0 +1,19 @@
+{
+  "name": "chrome-stats",
+  "version": "1.0.0",
+  "description": "A Google Chrome Extension for your Stats",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent5682/Chrome-Stats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincent5682/Chrome-Stats/issues"
+  },
+  "homepage": "https://github.com/vincent5682/Chrome-Stats#readme"
+}
