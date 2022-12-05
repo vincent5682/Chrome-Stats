@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="../scripts/jquery-3.6.1.min.js"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <link href="popup.css" rel="stylesheet">
 </head>
@@ -17,11 +18,13 @@
     <div class="flex justify-start items-start h-12 w-full">
       <p class="text-lg font-bold mt-2 text-white ml-3">Tabs ever opened: <span id="allTabs">0</span></p>
     </div>
+    <div class="flex justify-center items-center h-12 w-12 mt-auto ml-auto mb-3 mr-3 rounded-full cursor-pointer" id="refreshBtn">
+      <img src="../img/refreshBtnWhite.png" class="h-8 w-8">
+    </div>
   </div>
 </body>
 
 <script src="popup.js"></script>
 <script src="../scripts/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </html>

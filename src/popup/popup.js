@@ -1,10 +1,7 @@
-// chrome.runtime.onMessage.addListener(
-//   function (request, sender, sendResponse) {
-//       if (request.message === "opened_new_tab") {
-//           var firstHref = $("a[href^='http']").eq(0).attr("href");
+$('#refreshBtn').click(function() {
+    spin()
+})
 
-//           console.log("aaaa");
-//           console.log(firstHref);
-//       }
-//   }
-// );
+function spin() {
+    $('#refreshBtn').addClass("animate-spin")
+}

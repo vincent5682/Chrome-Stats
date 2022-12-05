@@ -8,22 +8,21 @@
   "manifest_version": 3,
   "minimum_chrome_version": "93",
   "background": {
-    "service_worker": "./src/scripts/background.js",
-    "type": "module"
+    "service_worker": "./src/scripts/background.js"
   },
   "permissions": [
-    "tabs"
-  ],
+    "tabs", "activeTab", "scripting"
+  ], 
   "action": {
     "default_popup": "./src/popup/popup.html",
-    "default_icon": "./img/icon.png"
+    "default_icon": "./src/img/icon.png"
   },
   "content_scripts": [
     {
       "matches": [
         "<all_urls>"
       ],
-      "js": ["./src/scripts/index.js", "./src/popup/popup.js"]
+      "js": ["./src/scripts/index.js", "./src/popup/popup.js", "./src/scripts/jquery-3.6.1.min.js"]
     }
   ]
 }
