@@ -7,7 +7,7 @@ $('#refreshBtn').click(function () {
 })
 
 function setData() {
-    chrome.storage.local.get(["tabs"], function(items){
-        $('#allTabs').text(items.tabs)
+    chrome.storage.sync.get(["tabs"], function(items){
+        $('#alltimeTabs').text(items.tabs)
     });
 }

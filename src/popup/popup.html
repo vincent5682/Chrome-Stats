@@ -1,25 +1,63 @@
 <!doctype html>
-<html class="h-64 w-64">
+<html class="h-96 w-72">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
   <script src="../scripts/jquery-3.6.1.min.js"></script>
+  <script src="../scripts/require.js"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <link href="popup.css" rel="stylesheet">
 </head>
 
-<body class="h-64 w-64">
+<body class="h-96 w-72">
   <div class="flex w-full h-full bg-gray-700 flex-col">
-    <div class="flex justify-center items-start h-12 w-full bg-yellow-600">
-      <p class="text-2xl font-bold mt-2 text-gray-900">Your Stats</p>
+    <div class="flex justify-center items-center h-12 w-full">
+      <img src="../img/icon.png" class="h-8 w-8 mt-3 mr-3">
+      <p class="text-2xl font-bold mt-3 text-yellow-300 mr-3">Chrome Stats</p>
     </div>
-    <div class="flex justify-start items-start h-12 w-full">
-      <p class="text-lg font-bold mt-2 text-white ml-3">Tabs ever opened: <span id="allTabs">0</span></p>
+    <!-- Stats Container -->
+    <div class="h-full w-full flex justify-center items-center flex-col">
+      <div class="w-64 bg-white h-20 rounded-2xl mt-3 shadow-2xl">
+        <p class="absolute mt-2 ml-2 font-bold text-gray-600 text-base">ALLTIME TABS</p>
+        <div class="w-full h-1/3 flex justify-end">
+          <div class="bg-blue-400 h-14 w-14 rounded-full mt-3 mr-3 flex justify-center items-center">
+            <img src="../img/tabs.png" class="w-10 h-10"></img>
+          </div>
+        </div>
+        <div class="flex justify-center w-full h-1/2">
+          <p class="text-4xl mt-1" id="alltimeTabs">0</p>
+        </div>
+      </div>
+      <div class="w-64 bg-white h-20 rounded-2xl mt-3 shadow-2xl">
+        <p class="absolute mt-2 ml-2 font-bold text-gray-600 text-base">SESSION TABS</p>
+        <div class="w-full h-1/3 flex justify-end">
+          <div class="bg-red-400 h-14 w-14 rounded-full mt-3 mr-3 flex justify-center items-center">
+            <img src="../img/tabs.png" class="w-10 h-10"></img>
+          </div>
+        </div>
+        <div class="flex justify-center w-full h-1/2">
+          <p class="text-4xl mt-1" id="sessionTabs">0</p>
+        </div>
+      </div>
+      <div class="w-64 bg-white h-20 rounded-2xl mt-3 mb-3 shadow-2xl">
+        <p class="absolute mt-2 ml-2 font-bold text-gray-600 text-base">DUMMY STATS</p>
+        <div class="w-full h-1/3 flex justify-end">
+          <div class="bg-green-400 h-14 w-14 rounded-full mt-3 mr-3 flex justify-center items-center">
+            <img src="../img/tabs.png" class="w-10 h-10"></img>
+          </div>
+        </div>
+        <div class="flex justify-center w-full h-1/2">
+          <p class="text-4xl mt-1" id="">0</p>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-center items-center h-12 w-12 mt-auto ml-auto mb-3 mr-3 rounded-full cursor-pointer" id="refreshBtn">
+    <div class="flex justify-center items-center w-full h-full">
+      <div class="absolute flex justify-center items-center h-12 w-12 rounded-full cursor-pointer"
+      id="refreshBtn">
       <img src="../img/refreshBtnWhite.png" class="h-8 w-8">
+    </div>
     </div>
   </div>
 </body>

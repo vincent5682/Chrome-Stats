@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vincent5682/Chrome-Stats/issues"
   },
-  "homepage": "https://github.com/vincent5682/Chrome-Stats#readme"
+  "homepage": "https://github.com/vincent5682/Chrome-Stats#readme",
+  "dependencies": {
+    "npm": "^9.1.3"
+  }
 }
