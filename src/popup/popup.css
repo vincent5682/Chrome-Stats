@@ -3,5 +3,29 @@
 @tailwind utilities;
 
 body {
-    font-family: 	Bahnschrift SemiBold;
+    font-family: Bahnschrift SemiBold;
+}
+
+/* Die hidden Klasse enthält die Einstellungen, um das Element unsichtbar zu machen */
+
+
+/* Die animate-enter-active Klasse enthält die Einstellungen für die Dauer der Animation */
+.animate-enter-active {
+    animation: slide-in 1s;
+}
+
+/* Die animate-enter Klasse enthält die Einstellungen für den Startzustand der Animation */
+.animate-enter {
+    transform: translateY(0);
+}
+
+/* Die Keyframes-Regel definiert die einzelnen Schritte der Animation */
+@keyframes slide-in {
+    from {
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
